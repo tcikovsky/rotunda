@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+
+.container {
+  background-image: url("../public/background.jpeg");
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  height: 101vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.blur {
+  position: absolute;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.headline {
+  z-index: 5;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+  position: relative;
+  width: calc(25vw * 2.14453125);
+  height: 25vw;
+  margin: auto;
+  top: 10vw;
+
+  transition: all 0.5s ease-out;
+  transition-property: top, height, width;
+}
+
+.pointerRow {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 2vw;
+  display: flex;
+  justify-content: center;
+
+  transition: opacity 0.5s ease-out;
+}
+
+.pointer {
+  background-color: white;
+  clip-path: polygon(49% 86%, 100% 51%, 49% 100%, 0 51%);
+  width: 10vw;
+  height: 10vw;
+}
+
+.pointerShadow {
+  filter: drop-shadow(0 15px 30px #000);
+}

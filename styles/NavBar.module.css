@@ -1,0 +1,15 @@
+.iconsContainer img {
+  border-radius: 20px;
+  width: 4vw;
+  margin: 0.3vw;
+}
+
+.iconsContainer div {
+  margin: 1vw;
+  position: fixed;
+  right: 0;
+}
+
+.iconsContainer img {
+  cursor: pointer;
+}
